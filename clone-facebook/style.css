@@ -8,7 +8,7 @@
   display: flex;
   background-color: rgb(66, 103, 178);
   height: 80px;
-  justify-content: space-between;
+  justify-content: space-evenly;
 }
 
 .facebook-login {
@@ -19,10 +19,33 @@
 .form-group {
   display: flex;
   flex-direction: column;
+  margin-right: 10px;
+}
+
+#user-email-phone-label {
+  color: white;
+  font-weight: bold;
+}
+
+#user-password-label {
+  color: white;
+  font-weight: bold;
+}
+
+#button-login {
+  background-color:#3b5998;
+  font-weight: bold;
+  color: white;
+  border: 0px;
+  box-shadow: #3b5991;
+  border-radius: 3px;
+  padding: 3px;
+  margin-left: 5px;
+  margin-top: 18px;
 }
 
 .form-control {
-  align-self: flex-end;
+  align-self:center;
 }
 
 .main-content {
@@ -32,10 +55,24 @@
 
 .left-content {
   width: 800px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+#facebook-slogan {
+  font-weight: bold;
+  color: rgb(6, 6, 114);
+  width: 310px;
+  line-height: 1.5;
+  margin-top: 30px;
 }
 
 .right-content {
   width: 300px;
+  margin-top: 25px;
+  line-height: 1.5;
 }
 
 form {
@@ -53,6 +90,13 @@ form {
 
 #facebook-register {
   align-self: flex-end;
+  padding: 5px 20px;
+  font-weight: bolder;
+  border-radius: 5px;
+  border: 0;
+  color: white;
+  box-shadow: 5px rgb(6, 63, 6);
+  background-color: rgb(83, 184, 83);
 }
 
 #error-message {
